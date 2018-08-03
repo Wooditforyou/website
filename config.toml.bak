@@ -2,7 +2,7 @@ baseurl = "http://www.wooditforyou.be"
 title = "Dimension"
 theme = "dimension"
 languageCode = "en-us"
-defaultContentLanguage = "en"
+defaultContentLanguage = "fr"
 enableRobotsTXT = true
 disableKinds=["RSS"]
 
@@ -33,12 +33,12 @@ disableKinds=["RSS"]
   link = "#"
 
 [languages]
-[languages.en]
-languageName = "English"
+[languages.fr]
+languageName = "Francais"
 weight = 1
 
-[languages.de]
-languageName = "Deutsch"
+[languages.nl]
+languageName = "Nederlands"
 weight = 2
 title = "Dimension"
 description = '<!--[-->A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<!--]--><br />
