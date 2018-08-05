@@ -4,23 +4,38 @@ weight = 40
 draft = false
 +++
 
-<form method="post" action="#">
+<form id="contactform" method="post" action="send_envoi.php">
 	<div class="field half first">
-		<label for="name">Name</label>
-		<input type="text" name="name" id="name" />
+		<input type="text" name="name" id="name" placeholder="Nom"/>
 	</div>
 	<div class="field half">
-		<label for="email">Email</label>
-		<input type="text" name="email" id="email" />
+		<input type="email" id="email" name="email" placeholder="Email">
 	</div>
 	<div class="field">
-		<label for="message">Message</label>
-		<textarea name="message" id="message" rows="4"></textarea>
+		<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
 	</div>
 	<ul class="actions">
-		<li><input type="submit" value="Send Message" class="special" /></li>
+		<li><input type="submit" value="Send message" class="special" /></li>
 		<li><input type="reset" value="Reset" /></li>
 	</ul>
+
+	<input type="text" name="_gotcha" style="display:none" />
 </form>
+<span id="contactformsent">Merci pour votre message Wooditforyou fera tout pour vous repondre au plus vite.</span>
+
+<script>
+$(document).ready(function($) { 
+    $(function(){
+        if (window.location.search == "?sent") {
+        	$('#contactform').hide();
+        	$('#contactformsent').show();
+        } else {
+        	$('#contactformsent').hide();
+        }
+    });
+});
+</script>
+
 
 {{< socialLinks >}}
+

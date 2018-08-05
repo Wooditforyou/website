@@ -1,7 +1,7 @@
 +++
 title = "Elements"
 weight = 50
-draft = true
+draft = false
 +++
 
 <h3 class="major">Hugo shortcodes in theme</h3>

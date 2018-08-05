@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: http://www.wooditforyou.be/sitemap.xml
